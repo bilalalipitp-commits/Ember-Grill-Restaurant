@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Table Reservation</title>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+  }
+
+  body {
+    background: #f7f7f7;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    box-sizing: border-box;
+  }
+
+  .Container {
+    background: #fff;
+    max-width: 500px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 20px rgba(0,0,0,0.1);
+    border: 1px solid #eee;
+    transition: 0.9s ease;
+  }
+
+  .Container:hover {
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+    border-color: #ff4d4d;
+     box-shadow: 0px 0px 10px rgb(219, 187, 10)
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+    position: relative;
+  }
+
+
+  .form-group {
+    margin-bottom: 18px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #444;
+    font-size: 14px;
+  }
+
+  input, select, 
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.8s;
+  }
+
+  input:focus,
+  
+select:focus, textarea:focus {
+    border-color: #ff4d4d;
+    box-shadow: 0 0 0 3px rgba(255, 77, 77, 0.15);
+  }
+
+  .row {
+    display: flex;
+    gap: 15px;
+  }
+
+  .row .form-group {
+    flex: 1;
+  }
+
+  button {
+    width: 100%;
+    padding: 16px;
+    background: #333;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    transition: 0.6s;
+  }
+
+  button:hover {
+    background: rgb(231, 207, 69);
+    transform: translateY(-5px);
+    transition: 0.9s;
+    color: #333;
+    font-weight: bolder;
+    font-size: 22px;
+    border: none;
+    box-shadow: 0px 0px 10px  #ff4d4d;
+  }
+
+  
+</style>
+</head>
+<body>
+
+<div class="Container">
+  <h2>Reserve a Table</h2>
+
+
+  <form>
+
+    <div class="row">
+      <div class="form-group">
+        
+        <label>Date</label>
+        <input type="date" required>
+      </div>
+      <div class="form-group">
+        <label>Time</label>
+        <input type="time" required>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="form-group">
+        <label>Guests</label>
+        <select required>
+          <option value="">Select</option>
+          <option>1 Person</option>
+          <option>2 People</option>
+          <option>3-4 People</option>
+          <option>5-6 People</option>
+          <option>7+ People</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Table Type</label>
+        <select>
+          <option>Indoor</option>
+          <option>Outdoor</option>
+          <option>Window Seat</option>
+          <option>Rooftop</option>
+          <option>Private Room</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Name</label>
+      <input type="text" placeholder="Your Name" required>
+    </div>
+
+    <div class="form-group">
+      <label>Phone</label>
+      <input type="tel" placeholder="+92 00000 52045" required>
+    </div>
+
+    <div class="form-group">
+      <label>Special Request</label>
+      <textarea placeholder="Birthday, Reception, Corporate Events..."></textarea>
+    </div>
+
+    <button type="submit">Book Table</button>
+  </form>
+</div>
+
+</body>
+</html>

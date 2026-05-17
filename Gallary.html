@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+         nav {
+            background:#333;
+            padding:15px;
+            text-align:center;
+        }
+        nav a {
+            color:white;
+            margin:15px;
+            font-weight:bold;
+            text-decoration: none;
+        }
+        nav a:hover { color:orange; }
+
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px 0px   ;
+          
+            
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 12px;
+              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+            transition: transform 0.5s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05) translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background:#333;
+            color:white;
+            text-align:center;
+
+            padding:10px;
+        }
+
+
+
+    </style>
+
+
+    </style>
+</head>
+<body>
+    
+<nav>
+    <a href="website.html">Home</a>
+    <a href="Hotel Menu.html">Menu</a>
+    <a href="about.html">About</a>
+    <a href="Gallary.html">Gallary</a>
+    <a href="contact.html">Contact</a>
+    <a href="htable.html">Booking</a>
+</nav>
+
+
+
+
+<h2>Gallery</h2>
+
+<div class="gallery">
+<img src="Capture1.JPG" alt="Main Hall">
+<img src="Capture2.JPG" alt="Lounch">
+<img src="Capture.JPG" alt="Ground Ares">
+<img src="hasham-shabbir-FveFFt7Ewgs-unsplash.jpg" alt="Parking">
+<img src="jason-leung-B_0GYrGINdE-unsplash.jpg" alt="Backing">
+<img src="jason-leung-poI7DelFiVA-unsplash.jpg" alt="Vip Room">
+<img src="jason-leung-S_FZVGbvVCY-unsplash.jpg" alt="">
+<img src="patrick-tomasso-NlcCPeKNmwg-unsplash.jpg" alt="">
+<img src="sean-nufer-Y8K9VqEJMHI-unsplash.jpg" alt="">
+
+</div>
+<footer>© 2026 Ember & Grill</footer>
+
+</div>
+</body>
+</html>

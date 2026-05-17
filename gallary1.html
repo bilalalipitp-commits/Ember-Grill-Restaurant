@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin:0;
+}
+
+nav {
+    background:#333;
+    padding:15px;
+    text-align:center;
+}
+nav a {
+    color:white;
+    margin:15px;
+    font-weight:bold;
+    text-decoration:none;
+}
+nav a:hover { color:orange; }
+
+h2 {
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.gallery {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap:20px;
+}
+
+.card {
+    text-align:center;
+}
+
+.card img {
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(249, 243, 63, 0.1);
+    transition:0.9s;
+}
+
+.card img:hover {
+    transform:scale(1.15);
+box-shadow: 0px 0px 20px orange;
+}
+.Book {
+    background: linear-gradient(45deg, #ff8c00, #ff3c00);
+    padding:10px 22px;
+    border-radius:30px;
+    color:white !important;
+    font-weight:bold;
+    text-decoration:none;
+    transition:0.3s ease;
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+}
+
+.Book:hover {
+    transform:translateY(-2px);
+    box-shadow:0 6px 16px rgba(0,0,0,0.3);
+    background: linear-gradient(45deg, #ff6a00, #ff2a00);
+}
+
+
+
+.caption {
+    margin-top:8px;
+    font-weight:bold;
+    color:#333;
+}
+
+footer {
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:10px;
+    margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="web1.html">Home</a>
+    <a href="Menu.html">Menu</a>
+    <a href="about.html">About</a>
+    <a href="gallary1.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+<a class="Book" href="htable.html">Booking</a></nav>
+
+<h2>Our Hotel Gallery</h2>
+
+<div class="gallery">
+
+<div class="card">
+<img src="Capture1.JPG">
+<div class="caption">Main Hall</div>
+</div>
+
+<div class="card">
+<img src="Capture2.JPG">
+<div class="caption">Family Seating</div>
+</div>
+
+
+<div class="card">
+<img src="jason-leung-poI7DelFiVA-unsplash.jpg">
+<div class="caption">Dining Area</div>
+</div>
+
+<div class="card">
+<img src="jason-leung-S_FZVGbvVCY-unsplash.jpg">
+<div class="caption">Kitchen</div>
+</div>
+
+<div class="card">
+<img src="patrick-tomasso-NlcCPeKNmwg-unsplash.jpg">
+<div class="caption">Reception Area</div>
+</div>
+
+
+<div class="card">
+<img src="hasham-shabbir-FveFFt7Ewgs-unsplash.jpg">
+<div class="caption">Parking Area</div>
+</div>
+
+<div class="card">
+<img src="sean-nufer-Y8K9VqEJMHI-unsplash.jpg">
+<div class="caption">Under Parking</div>
+</div>
+
+</div>
+
+<footer>© 2026 Ember & Grill</footer>
+
+</body>
+</html>
